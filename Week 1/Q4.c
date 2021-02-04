@@ -1,8 +1,10 @@
 #include<stdio.h>
 void main()
 {
-    float p,m,c,b,com,per;
-    printf("Enter your marks(from 100):-\nPhysics=");
+    float p,m,c,b,com,per,max;
+    printf("Enter maximum marks=);
+    scanf("%f", &max);
+    printf("Marks Obtained:-\nPhysics=");
     scanf("%f", &p);
     printf("Maths=");
     scanf("%f", &m);
@@ -12,7 +14,7 @@ void main()
     scanf("%f", &b);
     printf("Computer=");
     scanf("%f", &com);
-    per= (p+m+c+b+com)*100/500;   
+    per= (p+m+c+b+com)*100/max;   
     printf("\nTotal marks obtained=%f\n\nPercentage=%f\n\n", p+m+c+b+com, per);
     if (per>=90)
     {
