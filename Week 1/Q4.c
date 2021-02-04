@@ -2,9 +2,9 @@
 void main()
 {
     float p,m,c,b,com,per,max;
-    printf("Enter maximum marks=);
+    printf("Enter Maximum Marks=");
     scanf("%f", &max);
-    printf("Marks Obtained:-\nPhysics=");
+    printf("\nMarks Obtained:-\nPhysics=");
     scanf("%f", &p);
     printf("Maths=");
     scanf("%f", &m);
@@ -14,6 +14,8 @@ void main()
     scanf("%f", &b);
     printf("Computer=");
     scanf("%f", &com);
+    if (p+m+c+b+com<=max)
+    {
     per= (p+m+c+b+com)*100/max;   
     printf("\nTotal marks obtained=%f\n\nPercentage=%f\n\n", p+m+c+b+com, per);
     if (per>=90)
@@ -35,5 +37,8 @@ void main()
     {
         printf("Grade : F");
     }
-    
+    }else
+    {
+        printf("\n\t\t\t///Input Error///\nTotal marks obtained can not be greater the maximum marks.");
+    }    
 }
