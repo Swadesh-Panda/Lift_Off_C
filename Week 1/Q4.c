@@ -39,6 +39,6 @@ void main()
     }
     }else
     {
-        printf("\n\t\t\t///Input Error///\nTotal marks obtained can not be greater the maximum marks.");
+        printf("\n\t\t\t///Input Error///\nTotal marks obtained can not be greater than maximum marks.");
     }    
 }
